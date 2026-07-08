@@ -21,7 +21,11 @@ Se priorizaron, en este orden:
 **Recursos:**
 - [n8n Academy – Level One](https://docs.n8n.io/courses/level-one/) (`learn.n8n.io`) — curso oficial gratuito, ~2h, mezcla teoría corta con ejercicios de "constrúyelo ahora". Es el punto de partida recomendado por la propia documentación de n8n.
 - [Learning paths de n8n](https://docs.n8n.io/learning-paths) — mapa oficial de rutas de aprendizaje.
-- YouTube: "Master n8n in 2 Hours: Complete Beginner's Guide for 2026" y la playlist oficial "n8n Beginner course".
+
+**Videos de YouTube:**
+- 🎬 [n8n Beginner Course (playlist oficial, 9 partes)](https://www.youtube.com/playlist?list=PLlET0GsrLUL59YbxstZE71WszP3pVnZfI) — empieza con [1/9 Introduction to Automation](https://www.youtube.com/watch?v=4BVTkqbn_tY).
+- 🎬 [Master n8n in 2 Hours: Complete Beginner's Guide for 2026](https://www.youtube.com/watch?v=AURnISajubk)
+- 🎬 [n8n Tutorial – Zero to Hero Course](https://www.youtube.com/watch?v=UIf-SlmMays)
 
 **Práctica:**
 1. Instala n8n (n8n Cloud trial o self-hosted con Docker: `docker run -it --rm -p 5678:5678 n8nio/n8n`).
@@ -38,8 +42,11 @@ Se priorizaron, en este orden:
 
 **Recursos:**
 - [n8n Academy – Level Two](https://docs.n8n.io/courses/level-two/) — requiere n8n instalado, ~2h.
-- Udemy: **"n8n - AI Agents, AI Automations & AI Voice Agents (No-code!)"** de Damian Danelczyk y Krystian Wojtarowicz — el curso con más estudiantes inscritos (49,000+), reseñas destacan que explica conceptos complejos de forma muy accesible. Ve las secciones de APIs/webhooks/credenciales.
-- "Real-World Automation Course" (~6,000 estudiantes) — cubre webhooks, APIs, scraping y casos reales aplicables de inmediato.
+
+**Videos de YouTube:**
+- 🎬 [n8n Beginner Course (2/9) - Introduction to APIs and Webhooks](https://www.youtube.com/watch?v=y_cpFMF1pzk) — continúa la playlist oficial del Día 1.
+- 🎬 [Step-by-Step: N8N Webhooks (From Beginner to Pro)](https://www.youtube.com/watch?v=lK3veuZAg0c)
+- 🎬 En español: [Tutorial n8n - Crear un Webhook tipo API](https://www.youtube.com/watch?v=qAIT71nL1gU)
 
 **Práctica:**
 1. Automatiza un proceso real con al menos 2 integraciones externas (ej. leer correos → clasificar → guardar en Google Sheets/Notion).
@@ -61,7 +68,11 @@ Se priorizaron, en este orden:
 - [Chat Memory Manager — docs oficiales](https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorymanager) (para patrones custom sobre cualquier backend de memoria)
 - [Redis Chat Memory](https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memoryredischat) / [Postgres Chat Memory](https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorypostgreschat) — para producción con workers distribuidos.
 - [n8n-io/skills – MEMORY.md](https://github.com/n8n-io/skills/blob/main/plugins/n8n-skills/skills/n8n-agents/references/MEMORY.md) — referencia técnica oficial de n8n sobre memoria en agentes.
-- Curso gratuito "Build & Sell n8n AI Agents" (8+ horas) para ver agentes de IA aplicados a casos reales.
+
+**Videos de YouTube:**
+- 🎬 [Building AI Agents: Chat Trigger, Memory, and System/User Messages Explained (Part 1)](https://www.youtube.com/watch?v=yzvLfHb0nqE) — del canal oficial de n8n.
+- 🎬 [4 Ways To Store Memory In Your AI Agents (n8n tutorial)](https://www.youtube.com/watch?v=mtubt_wqxqE) — compara Buffer Window, Postgres, Redis y memoria custom.
+- 🎬 [Build an AI Agent That Actually Remembers You (n8n Tutorial)](https://www.youtube.com/watch?v=t_azqARQSb8)
 
 **Práctica:**
 1. Construye un chatbot con `AI Agent` + `Simple Memory` (Buffer Window), ajustando `Context Window Length` y observando el trade-off (más contexto = más tokens/costo, menos contexto = el bot "olvida" rápido).
@@ -81,6 +92,10 @@ Se priorizaron, en este orden:
 - [n8n.io/rag — página oficial de producto](https://n8n.io/rag/)
 - [Build a Custom Knowledge RAG Chatbot — n8n Blog](https://blog.n8n.io/rag-chatbot/)
 - Plantilla oficial: ["Basic RAG chat"](https://n8n.io/workflows/5028-basic-rag-chat/)
+
+**Videos de YouTube:**
+- 🎬 [The BEST (and easiest) Tutorial To Learn n8n - RAG AI Agents And Vector Database](https://www.youtube.com/watch?v=VItv8MJ9xBs)
+- 🎬 [The NEW Way to Build RAG Agents in Minutes (n8n Tutorial)](https://www.youtube.com/watch?v=4kXisbPnNsU)
 
 **Arquitectura a construir (2 workflows):**
 - **Ingesta:** Document Loader (Google Drive/HTTP/archivo) → Text Splitter (chunking) → Embeddings (OpenAI/Cohere/Vertex AI) → Vector Store en modo "insert" (Pinecone, Qdrant, Supabase, PGVector, o In-Memory para pruebas).
@@ -107,6 +122,11 @@ Se priorizaron, en este orden:
 - Plantilla oficial: ["Chat with PDF / MD / text files using GraphRAG (no vector store needed)"](https://n8n.io/workflows/4755-chat-with-pdf-md-text-files-using-graphrag-no-vector-store-needed/)
 - [Build a Custom Knowledge Base Graph RAG AI Chatbot con n8n — Nodus Labs](https://support.noduslabs.com/hc/en-us/articles/20266671215388-Build-a-Custom-Knowledge-Base-Graph-RAG-AI-Chatbot-with-n8n)
 - [GraphRAG con Qdrant y Neo4j — Qdrant docs](https://qdrant.tech/documentation/examples/graphrag-qdrant-neo4j/) (para una implementación más "code-heavy" si quieres profundizar).
+
+**Videos de YouTube:**
+- 🎬 [Make your AI Agents 10x Smarter with GraphRAG (n8n)](https://www.youtube.com/watch?v=EUG65dIY-2k) — del canal The AI Automators (especializados en agentes de IA de nivel producción).
+- 🎬 [Knowledge Graphs in n8n are FINALLY Here!](https://www.youtube.com/watch?v=NQ3vJ8iZPaQ)
+- 🎬 Short: [GraphRAG + n8n = Accurate RAG](https://www.youtube.com/shorts/2KOGmpD6Vbo)
 
 **Práctica:**
 1. Importa y ejecuta una plantilla de GraphRAG (InfraNodus o Neo4j+Qdrant) y compara sus respuestas contra tu chatbot RAG del día 4 usando las mismas preguntas.
